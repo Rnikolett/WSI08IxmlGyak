@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DOCTYPE RN_orarend SYSTEM "orarend.dtd">
+
+<orarend>
+	<ora id="1" tipus="Számítástechnika">
+		<targy>Mesterséges Inteligencia</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<kezdet>12</kezdet>
+			<vege>15</vege>
+		</idopont>
+		<helyszin>A1/305</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="2" tipus="Számítástechnika">
+		<targy>Web technológiág</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<kezdet>15</kezdet>
+			<vege>17</vege>
+		</idopont>
+		<helyszin>In/103</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="2" tipus="Számítástechnika">
+		<targy>Web technológiák</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<kezdet>17</kezdet>
+			<vege>19</vege>
+		</idopont>
+		<helyszin>In15</helyszin>
+		<oktato>Sátán Ádám</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="3" tipus="Számítástechnika">
+		<targy>Webes alkalmazások(Java)</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<kezdet>10</kezdet>
+			<vege>12</vege>
+		</idopont>
+		<helyszin>In/103</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="3" tipus="Számítástechnika">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<kezdet>12</kezdet>
+			<vege>14</vege>
+		</idopont>
+		<helyszin>37</helyszin>
+		<oktato>Dr. Badnarik László</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="4" tipus="idegen_nyelv">
+		<targy>Kínai</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<kezdet>16</kezdet>
+			<vege>18</vege>
+		</idopont>
+		<helyszin>117</helyszin>
+		<oktato>Kristi Fan</oktato>
+		<szak>-</szak>
+	</ora>
+	
+	<ora id="5" tipus="Számítástechnika">
+		<targy>Szoftvertechnológia</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<kezdet>8</kezdet>
+			<vege>12</vege>
+		</idopont>
+		<helyszin>218</helyszin>
+		<oktato>Dr. Mileff Péter</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="6" tipus="Számítástechnika">
+		<targy>Windows Rendszergazda</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<kezdet>16</kezdet>
+			<vege>20</vege>
+		</idopont>
+		<helyszin>112</helyszin>
+		<oktato>Wagner György</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="3" tipus="Számítástechnika">
+		<targy>Webes alkalmazások(Java)</targy>
+		<idopont>
+			<nap>Csütörtök</nap>
+			<kezdet>10</kezdet>
+			<vege>12</vege>
+		</idopont>
+		<helyszin>In/202</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="3" tipus="Számítástechnika">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Csütörtök</nap>
+			<kezdet>12</kezdet>
+			<vege>14</vege>
+		</idopont>
+		<helyszin>In/102</helyszin>
+		<oktato>Dr. Badnarik László</oktato>
+		<szak>GE-BI</szak>
+	</ora>
+	
+	<ora id="4" tipus="idegen_nyelv">
+		<targy>Kínai</targy>
+		<idopont>
+			<nap>Csütörtök</nap>
+			<kezdet>16</kezdet>
+			<vege>18</vege>
+		</idopont>
+		<helyszin>117</helyszin>
+		<oktato>Kristi Fan</oktato>
+		<szak>-</szak>
+	</ora>
+	
+	
+</orarend>

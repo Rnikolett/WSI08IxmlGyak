@@ -1,0 +1,8 @@
+
+<!ELEMENT orarend (ora+)>
+<!ELEMENT ora(tagy,idopont,helyszin,oktato,szak)>
+<!ELEMENT tagy(#PCDATA)>
+<!ELEMENT idopont(nap,kezdet,vege)>
+<!ELEMENT helyszin(#PCDATA)>
+<!ELEMENT oktato(#PCDATA)>
+<!ELEMENT szak(#PCDATA)>

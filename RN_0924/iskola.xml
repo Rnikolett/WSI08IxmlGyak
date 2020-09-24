@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iskola>
+	<tanar id="1">
+		<nev id="1">Lajos</nev>
+		<szak>Fafaragás</szak>
+	</tanar>
+	<tanar id="2">
+		<nev id="1">Béla</nev>
+		<szak>Zongora Cipelés</szak>
+	</tanar>
+	
+	<tantargy kod="t1" oktato="1">
+		<tnév>Fafaragás</tnév>
+		<osztaly>12</osztaly>
+	</tantargy>
+	
+	<tantargy kod="t2" oktato="2">
+		<tnév>Zongora Cipelés</tnév>
+		<osztaly>12</osztaly>
+	</tantargy>
+</iskola>
