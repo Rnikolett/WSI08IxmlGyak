@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="orarend">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="ora" minOccurs="0" maxOccurs="unbounded" type="oratipus">
+				
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+<xs:complexType name="oratipus">
+	<xs:sequence>
+		<xs:element name="targy" type="xs:string"/>
+		<xs:element name="idopont" type="idoponttipus"/>
+		<xs:element name="helyszin" type="xs:string"/>
+		<xs:element name="oktato" type="xs:string"/>
+		<xs:element name="szak" type="xs:string"/>
+	</xs:sequence>
+		<xs:attribute name="id" type="xs:int" use="required"/>
+		<xs:attribute name="tipus" type="oratipustipus" default="eloadas"/>
+</xs:complexType>
+
+<xs:simpleType name="oratipustipus">
+	<xs:restriction base="xs:string">
+	<xs:enumeration value="eloadas"/>
+	<xs:enumeration value="gyakorlat"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="idoponttipus">
+	<xs:sequence>
+		<xs:element name="nap" type="naptipus"/>
+		<xs:element name="kezdet" type="xs:positiveInteger"/>
+		<xs:element name="vege" type="xs:positiveInteger"/>
+	</xs:sequence>
+</xs:complexType
+>
+<xs:simpleType name="naptipus">
+	<xs:restriction base="xs:string">
+	<xs:enumeration value="Hétfő"/>
+	<xs:enumeration value="Kedd"/>
+	<xs:enumeration value="Szerda"/>
+	<xs:enumeration value="Csütörtök"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+
+</xs:schema>

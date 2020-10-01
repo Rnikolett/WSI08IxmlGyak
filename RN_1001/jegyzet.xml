@@ -1,0 +1,9 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+
+
+<jegyzet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jegyzet.xsd"> 
+	<to>John</to>
+	<from>Math</from>
+	<heading>Reminder</heading>
+	<reminder>Dont forget about me</reminder>
+</jegyzet>
