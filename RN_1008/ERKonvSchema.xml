@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ER xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="ERKonvSchema.xsd">
+<A key="A_a">
+	<b>
+		<x/>
+		<y/>
+	</b>
+	<c>
+		<urescucc></urescucc>
+		<megegyures></megegyures>
+	</c>
+</A>
+
+<kapcs keyref="A_a">
+	<ca></ca>
+</kapcs>
+<B key="A_a">
+	<b>
+		<x></x>
+		<y></y>
+	</b>
+</B>
+<C keyref="B_a">
+	<b></b>
+</C>
+</ER>

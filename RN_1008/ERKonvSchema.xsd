@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="ER">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="A" type="aa" />
+				<xs:element name="kapcs" type="kap" />
+				<xs:element name="B" type="bb" />
+				<xs:element name="C" type="cc" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="aa">
+		<xs:sequence>
+			<xs:element name="b" type="bb" />
+			<xs:element name="c" type="c2" />
+		</xs:sequence>
+		<xs:attribute name="A_a" type="xs:integer"></xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="kap">
+		<xs:sequence>
+			<xs:element name="ca" type="xs:string"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="A_a" />
+	</xs:complexType>
+
+	<xs:complexType name="bb">
+		<xs:sequence>
+			<xs:element name="b" type="b2"/>
+			<xs:element name="x" type="xs:string" />
+			<xs:element name="y" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="A_a" />
+	</xs:complexType>
+
+	<xs:complexType name="cc">
+		<xs:sequence>
+			<xs:element name="b" type="xs:string"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="B_a" />
+	</xs:complexType>
+
+	<xs:complexType name="c2">
+		<xs:sequence>
+			<xs:element name="c" type="xs:string"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="A_a" />
+	</xs:complexType>
+	
+	<xs:complexType name="b2">
+		<xs:sequence>
+			<xs:element name="x" type="xs:string" />
+			<xs:element name="y" type="xs:string"/>		
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
