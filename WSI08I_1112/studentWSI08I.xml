@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+	<student rollno="393">
+		<firsname>Nikolett</firsname>
+		<lastname>Radócz</lastname>
+		<nickname>Niki</nickname>
+		<marks>85</marks>
+	</student>
+	
+	<student rollno="493">
+		<firsname>Dora</firsname>
+		<lastname>Kék</lastname>
+		<nickname>Dorka</nickname>
+		<marks>95</marks>
+	</student>
+	
+	<student rollno="593">
+		<firsname>Andrea</firsname>
+		<lastname>Zsoldos</lastname>
+		<nickname>Andi</nickname>
+		<marks>90</marks>
+	</student>
+</class>
