@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="XMLSchemaWSI08I.xsd">
+
+<kolcsonzo kol_id="01">
+	<nev>Bene Anna</nev>
+	<email>banna@gmail.com</email>
+	<lakcim>Miskolc</lakcim>
+</kolcsonzo>
+<kolcsonzo kol_id="02">
+	<nev>Kiss Jozsef</nev>
+	<email>jozsi@gmail.com</email>
+	<lakcim>Budapest</lakcim>
+</kolcsonzo>
+
+
+<kolcsonzes kod="01" kol_id="01">
+	<hatarido>2020.12.20</hatarido>
+</kolcsonzes>
+<kolcsonzes kod="02" kol_id="02">
+	<hatarido>2021.01.10</hatarido>
+</kolcsonzes>
+
+
+<iro i_id="01">
+	<nev>Vavyan Fable</nev>
+	<nemzetiseg>Magyar</nemzetiseg>
+</iro>
+<iro i_id="02">
+	<nev>Jennifer A. Nelsen</nev>
+	<nemzetiseg>Angol</nemzetiseg>
+</iro>
+<iro i_id="03">
+	<nev>Tasmina Perry</nev>
+	<nemzetiseg>Angol</nemzetiseg>
+</iro>
+
+
+<konyvtar kt_azon="01">
+	<nev>II. Rákóczi Ferenc Megyei és Városi Könyvtár</nev>
+	<varos>Miskolc</varos>
+</konyvtar>
+
+
+<konyv konyv_kod="01" kt_azon="01">
+	<cim>Vészbejárat</cim>
+	<műfaj>krimi</műfaj>
+</konyv>
+<konyv konyv_kod="02" kt_azon="01">
+	<cim>Sztárok ügyvédje</cim>
+	<műfaj>romantikus</műfaj>
+</konyv>
+<konyv konyv_kod="03" kt_azon="01">
+	<cim>The Shadow Throne</cim>
+	<műfaj>misztikus</műfaj>
+</konyv>
+
+
+<kiadas i_id="01" konyv_kod="01">
+	<kiadas_datum>2000</kiadas_datum>
+	<nyelv>magyar</nyelv>
+</kiadas>
+<kiadas i_id="02" konyv_kod="3">
+	<kiadas_datum>2015</kiadas_datum>
+	<nyelv>angol</nyelv>
+</kiadas>
+<kiadas i_id="02" konyv_kod="02">
+	<kiadas_datum>2012</kiadas_datum>
+	<nyelv>német</nyelv>
+</kiadas>
+
+
+<kolcskonyv kod="01" konyv_kod="03"/>
+<kolcskonyv kod="01" konyv_kod="02"/>
+<kolcskonyv kod="02" konyv_kod="01"/>
+</root>

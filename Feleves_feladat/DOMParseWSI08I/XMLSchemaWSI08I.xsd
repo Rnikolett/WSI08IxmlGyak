@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="root">
+	<xs:complexType>
+		<xs:sequence>
+<xs:element name="kolcsonzo" maxOccurs="unbounded" >
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="email" type="xs:string"/>
+			<xs:element name="lakcim" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="kol_id" type="xs:int"/>
+	</xs:complexType>				
+</xs:element>
+
+<xs:element name="kolcsonzes" maxOccurs="unbounded">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="hatarido" type="xs:date"/>
+		</xs:sequence>
+		<xs:attribute name="kod" type="xs:int"/>
+		<xs:attribute name="kol_id" type="xs:int"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="iro" maxOccurs="unbounded">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="nemzetiseg" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="i_id" type="xs:int"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="konyvtar" maxOccurs="unbounded">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="varos" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="kt_azon" type="xs:int"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="konyv" maxOccurs="unbounded">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="cim" type="xs:string"/>
+			<xs:element name="műfaj" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="konyv_kod" type="xs:int"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="kiadas" maxOccurs="unbounded">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="kiadas_datum"  type="xs:int"/>
+			<xs:element name="nyelv"  type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="i_id" type="xs:int"/>
+		<xs:attribute name="konyv_kod" type="xs:int"/>
+	</xs:complexType>
+</xs:element>
+
+
+
+<xs:element name="kolcskonyv">
+	<xs:complexType>
+		<xs:attribute name="kol_id" type="xs:int"/>
+		<xs:attribute name="konyv_kod" type="xs:int"/>
+	</xs:complexType>
+</xs:element>
+
+		</xs:sequence>
+	</xs:complexType>
+	
+<xs:key name="key1">
+	<xs:selector xpath="kolcsonzo"></xs:selector>
+	<xs:field xpath="@kol_id"></xs:field>
+</xs:key>
+
+<xs:key name="key2">
+	<xs:selector xpath="iro"></xs:selector>
+	<xs:field xpath="@i_id"></xs:field>
+</xs:key>
+
+<xs:key name="key3">
+	<xs:selector xpath="kolcsonzes"></xs:selector>
+	<xs:field xpath="@kod"></xs:field>
+</xs:key>
+
+<xs:key name="key4">
+	<xs:selector xpath="konyv"></xs:selector>
+	<xs:field xpath="@konyv_kod"></xs:field>
+</xs:key>
+
+<xs:key name="key5">
+	<xs:selector xpath="konyvvtar"></xs:selector>
+	<xs:field xpath="@kt_azon"></xs:field>
+</xs:key>
+
+<xs:keyref refer="key1" name="ref1">
+			<xs:selector xpath="kolcsonzes" />
+			<xs:field xpath="@kol_id" />
+</xs:keyref>
+
+<xs:keyref refer="key2" name="ref2">
+			<xs:selector xpath="kiadas" />
+			<xs:field xpath="@i_id" />
+</xs:keyref>
+
+<xs:keyref refer="key4" name="ref3">
+			<xs:selector xpath="kiadas" />
+			<xs:field xpath="@konyv_kod" />
+</xs:keyref>
+
+<xs:keyref refer="key3" name="ref4">
+			<xs:selector xpath="kolcskonyv" />
+			<xs:field xpath="@kod" />
+</xs:keyref>
+
+<xs:keyref refer="key4" name="ref5">
+			<xs:selector xpath="kolcskonyv" />
+			<xs:field xpath="@konyv_kod" />
+</xs:keyref>
+<xs:keyref refer="key5" name="ref6">
+			<xs:selector xpath="konyv" />
+			<xs:field xpath="@kt_azon" />
+</xs:keyref>
+
+</xs:element>
+
+
+</xs:schema>
